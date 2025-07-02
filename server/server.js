@@ -28,9 +28,9 @@ app.use((err, req, res, next) => {
     res.status(500).json({ error: 'Something went wrong!' });
 });
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT ;
 connectDb().then(() => {
-    app.listen(9000, () => {
-        console.log(`Server is running on port 9000`);
+    app.listen(PORT, () => {
+        console.log(`Server is running on port ${PORT}`);
     });
 });
