@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // CORS Configuration
 app.use(cors({
-    origin: "https://guided-wailist.vercel.app/",
+    origin: "https://guided-wailist.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
