@@ -48,16 +48,16 @@ export const emailContent = (fullName) => `
     
     <!-- CTA Button -->
     <div style="text-align: center; margin: 30px 0 20px;">
-      <a href="[YOUR-WAITLIST-URL]" style="background-color: #0066cc; color: white; padding: 12px 25px; text-decoration: none; border-radius: 30px; font-weight: bold; display: inline-block; font-size: 15px;">Explore What's Coming</a>
+      <a href="https://guided-wailist.vercel.app/" style="background-color: #0066cc; color: white; padding: 12px 25px; text-decoration: none; border-radius: 30px; font-weight: bold; display: inline-block; font-size: 15px;">Explore What's Coming</a>
     </div>
     
     <p style="font-size: 15px;">We'll notify you as soon as we launch. In the meantime, follow us for updates:</p>
     
     <!-- Social links -->
     <div style="text-align: center; margin: 20px 0;">
-      <a href="[YOUR-TWITTER-URL]" style="display: inline-block; margin: 0 5px;"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter" style="width: 30px;"></a>
-      <a href="[YOUR-LINKEDIN-URL]" style="display: inline-block; margin: 0 5px;"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 30px;"></a>
-      <a href="[YOUR-INSTAGRAM-URL]" style="display: inline-block; margin: 0 5px;"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width: 30px;"></a>
+      <a href="https://x.com/basscotte_" style="display: inline-block; margin: 0 5px;"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter" style="width: 30px;"></a>
+      <a href="https://www.linkedin.com/company/guided-tech/?viewAsMember=true" style="display: inline-block; margin: 0 5px;"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 30px;"></a>
+      <a href="https://www.instagram.com/guided366/" style="display: inline-block; margin: 0 5px;"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width: 30px;"></a>
     </div>
     
     <p style="font-size: 15px;">Best regards,<br>
@@ -69,7 +69,7 @@ export const emailContent = (fullName) => `
     <p>© ${new Date().getFullYear()} GuidEd. All rights reserved.<br>
     Transforming education through innovative technology</p>
     <p style="margin-top: 10px;">
-      <a href="[YOUR-WEBSITE-URL]" style="color: #0066cc; text-decoration: none;">www.guidedlearning.com</a>
+      <a href="https://guided-wailist.vercel.app/" style="color: #0066cc; text-decoration: none;">www.guidedlearning.com</a>
     </p>
   </div>
 </body>
