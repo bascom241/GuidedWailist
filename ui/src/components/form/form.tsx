@@ -1,5 +1,5 @@
 "use client";
-/* eslint-disable react/no-unescaped-entities */
+
 
 import React, { useState } from 'react';
 import { authStore } from '../../../store/useAuthStore';
@@ -49,12 +49,9 @@ const Form: React.FC<FormProps> = ({ isOpen, setIsOpen }) => {
         if (!validateForm()) return;
 
         try {
-
-
             const success = await addToWaitList(formData);
             if (!success) {
                 setLocalError('Failed to join waitlist. Please try again.');
-       
                 setFormData({
                     fullName: '',
                     email: '',
@@ -69,8 +66,6 @@ const Form: React.FC<FormProps> = ({ isOpen, setIsOpen }) => {
                     message: ''
                 });
             }
-            // Clear form on successful submission
-
         } catch (err) {
             console.error('Submission error:', err);
         }
@@ -86,26 +81,24 @@ const Form: React.FC<FormProps> = ({ isOpen, setIsOpen }) => {
                 <ToastModal
                     isOpen={isOpen}
                     onClose={() => setIsOpen(false)}
-                    title="You're on the GuidEd Waitlist!"
+                    title="You&apos;re on the GuidEd Waitlist!"
                     content={
                         <div>
                             <p className="mb-2">
-                                🎉 <strong>Thank you for signing up!</strong> You’re one step closer to experiencing the future of personalized, AI-powered learning with <strong>GuidEd</strong>.
+                                🎉 <strong>Thank you for signing up!</strong> You&apos;re one step closer to experiencing the future of personalized, AI-powered learning with <strong>GuidEd</strong>.
                             </p>
                             <p className="mb-2">
-                                Please check your email — we’ve sent a confirmation message to welcome you. 📩 Make sure to open it so you don't miss important updates about our launch.
+                                Please check your email — we&apos;ve sent a confirmation message to welcome you. 📩 Make sure to open it so you don&apos;t miss important updates about our launch.
                             </p>
                             <p className="mb-2">
-                                We’re building something truly special, and we’d love for you to be part of it. 🌟 Share GuidEd with friends, classmates, and colleagues — help us grow our learning community!
+                                We&apos;re building something truly special, and we&apos;d love for you to be part of it. 🌟 Share GuidEd with friends, classmates, and colleagues — help us grow our learning community!
                             </p>
                             <p className="font-semibold">
-                                Together, we’re creating smarter, more personalized education for everyone. 🚀
+                                Together, we&apos;re creating smarter, more personalized education for everyone. 🚀
                             </p>
                         </div>
                     }
                 />
-
-
             }
 
             <input
@@ -147,7 +140,6 @@ const Form: React.FC<FormProps> = ({ isOpen, setIsOpen }) => {
             >
                 {addingUser ? 'Submitting...' : 'Join Waitlist'}
             </button>
-
         </form>
     );
 };
