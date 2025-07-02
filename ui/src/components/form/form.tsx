@@ -1,10 +1,9 @@
 "use client";
 
-
 import React, { useState } from 'react';
 import { authStore } from '../../../store/useAuthStore';
-
 import ToastModal from '../ToastModal';
+
 interface FormProps {
     isOpen: boolean;
     setIsOpen: (isOpen: boolean) => void;
@@ -81,20 +80,20 @@ const Form: React.FC<FormProps> = ({ isOpen, setIsOpen }) => {
                 <ToastModal
                     isOpen={isOpen}
                     onClose={() => setIsOpen(false)}
-                    title="You&apos;re on the GuidEd Waitlist!"
+                    title="You are on the GuidEd Waitlist!"
                     content={
                         <div>
                             <p className="mb-2">
-                                🎉 <strong>Thank you for signing up!</strong> You&apos;re one step closer to experiencing the future of personalized, AI-powered learning with <strong>GuidEd</strong>.
+                                🎉 <strong>Thank you for signing up!</strong> You are one step closer to experiencing the future of personalized, AI-powered learning with <strong>GuidEd</strong>.
                             </p>
                             <p className="mb-2">
-                                Please check your email — we&apos;ve sent a confirmation message to welcome you. 📩 Make sure to open it so you don&apos;t miss important updates about our launch.
+                                Please check your email — we have sent a confirmation message to welcome you. 📩 Make sure to open it so you do not miss important updates about our launch.
                             </p>
                             <p className="mb-2">
-                                We&apos;re building something truly special, and we&apos;d love for you to be part of it. 🌟 Share GuidEd with friends, classmates, and colleagues — help us grow our learning community!
+                                We are building something truly special, and we would love for you to be part of it. 🌟 Share GuidEd with friends, classmates, and colleagues — help us grow our learning community!
                             </p>
                             <p className="font-semibold">
-                                Together, we&apos;re creating smarter, more personalized education for everyone. 🚀
+                                Together, we are creating smarter, more personalized education for everyone. 🚀
                             </p>
                         </div>
                     }
