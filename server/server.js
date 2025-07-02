@@ -1,0 +1,36 @@
+import express from 'express';
+import mongoose from 'mongoose';
+const app = express();
+import dotenv from 'dotenv';
+import cors from 'cors';
+import { connectDb } from './utils/connectDb.js';
+import userRouter from './routes/userRouter.js';
+
+dotenv.config();
+
+// Middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// CORS Configuration
+app.use(cors({
+    origin: process.env.CLIENT_URL || 'http://localhost:3000',
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+}));
+
+// Routes
+app.use('/api/v1/waitlist', userRouter);
+
+// Error Handling Middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).json({ error: 'Something went wrong!' });
+});
+
+const PORT = process.env.PORT || 4000;
+connectDb().then(() => {
+    app.listen(9000, () => {
+        console.log(`Server is running on port 9000`);
+    });
+});
