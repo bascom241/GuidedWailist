@@ -15,6 +15,7 @@ const Navbar = () => {
             alt="GuidEd Logo" 
             className="h-8 w-auto" 
             priority
+            onClick={() => window.location.href = '/'} // Redirect to home on click
           />
         </div>
         
