@@ -20,7 +20,7 @@ export const authStore = create<AuthState>((set) => ({
         set({ addingUser: true, error: "" });
         try {
             const response = await axios.post(
-                "http://localhost:9000/api/v1/waitlist/add",
+                "https://guidedwailist.onrender.com/api/v1/waitlist/add",
                 formData,
                 {
                     headers: {
