@@ -1,3 +1,6 @@
+"use client"
+/* eslint-disable react/no-unescaped-entities */
+
 import { Dialog, Transition } from "@headlessui/react";
 import React, { Fragment } from "react";
 
